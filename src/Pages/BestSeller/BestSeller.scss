@@ -1,0 +1,149 @@
+@import '../../Global/variables.scss';
+
+.bestseller {
+    margin-top: 11.1rem;
+
+    &_parent {
+        &_container {
+            display: flex;
+
+            &_title {
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 3.2rem;
+                line-height: 4rem;
+                margin-right: 2.9rem;
+            }
+
+            &_lists {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                margin-right: 5.4rem;
+
+                &_items {
+                    font-family: 'Quicksand';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                    margin-right: 2.4rem;
+                }
+            }
+
+            &_btn {
+                background: $primaryRed;
+                border: none;
+                color: $primaryWhite;
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+}
+.bestseller_card_parent {
+    display: flex;
+    gap: 1.5rem;
+}
+.bestseller_card {
+    position: relative;
+    margin-top: 6.2rem;
+    border: 1px solid rgba(173, 173, 173, 0.25);
+border-radius: 3px;
+    width: 22.8rem;
+
+    &_offer {
+        position: absolute;
+        // background-color: #FFD480;
+        border: none;
+        cursor: pointer;
+        padding: .5rem 1rem;
+        color: $primaryWhite;
+    }
+
+    &_content {
+        margin: 0 1.2rem;
+    }
+
+    &_subTitle {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: $primaryColor1;
+    }
+
+    &_title {
+        margin-top: .7rem;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    &_author {
+        margin-top: 3.1rem;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    &_price {
+        display: flex;
+        align-items: center;
+        margin: 1.3rem 0;
+
+        &_doller {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: $primaryColor4;
+            margin-right: 1rem;
+        }
+
+        &_discount {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            text-decoration: line-through;
+            color: $primaryColor1;
+        }
+    }
+
+    &_sold {
+        margin-top: 2.2rem;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    &_cartBtn {
+        margin: 2.1rem 0 1rem 0;
+        display: grid;
+
+        &_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2.5rem;
+            background-color: $primaryColor4;
+            color: $primaryWhite;
+            border: none;
+        }
+
+        &_icon {
+            margin-right: 1rem;
+            color: $primaryWhite;
+        }
+    }
+}

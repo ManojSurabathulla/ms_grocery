@@ -1,0 +1,103 @@
+@import '../../Global/variables.scss';
+
+.grocery_cards_main {
+    margin-top: 10.3rem;
+}
+
+.main_parent {
+    margin-bottom: 3.7rem;
+}
+
+.grocery_featured {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .grocery_featured_parent {
+        width: 22.4rem;
+        border: 1px solid rgba(173, 173, 173, 0.25);
+        border-radius: 3px;
+    }
+
+    &_subTitle {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: $primaryColor1;
+        margin-bottom: 0.7rem;
+    }
+
+    &_title {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: $primaryColor3;
+        margin-bottom: 3.15rem;
+    }
+
+    &_author {
+        margin-top: 3.15rem;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &_content {
+        margin: 10px;
+    }
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        align-items: center;
+
+        &_doller {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            color: $primaryColor4;
+            margin-right: 1rem;
+        }
+
+        &_discount {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: $primaryColor1;
+            text-decoration: line-through;
+        }
+
+        &_btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: .7rem 2.2rem;
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: $primaryColor4;
+            background-color: #DEF9EC;
+            border: none;
+
+            img {
+                padding-right: 10px;
+            }
+        }
+    }
+
+}

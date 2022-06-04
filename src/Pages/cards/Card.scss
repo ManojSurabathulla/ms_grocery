@@ -1,0 +1,79 @@
+@import '../../Global/variables.scss';
+
+.grocery_card {
+    &_parent {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3.2rem;
+            line-height: 4rem;
+        }
+    }
+
+    &_lists {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        cursor: pointer;
+
+        &_items {
+            margin: 0px 1rem;
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+        :hover {
+            // background: $primaryColor4;
+            color: $primaryColor4;
+        }
+        :visited {
+            color: aqua;
+        }
+    }
+}
+
+.grocery_cards {
+    &_container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &_parent {
+        width: 15.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    &_img {
+        margin-top: 1.3rem;
+    }
+
+    &_title {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    &_items {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: $primaryColor1;
+        margin-bottom: 1.9rem;
+        cursor: pointer;
+    }
+}
